@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 def uppercase(str):
-    result = ""
-    alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     for i in str:
-        if i not in alphabet or alphabet.index(i) >= 26:
-            result += i
+        if ord(i) > 98 and ord(i) < 123:
+
+            Result = ord(i) - 32
+           
         else:
-            result += alphabet[alphabet.index(i)+26]
-        
-    print(result)
+            Result = ord(i)
+        print("{:c}".format(Result),end="")
+    print("")
