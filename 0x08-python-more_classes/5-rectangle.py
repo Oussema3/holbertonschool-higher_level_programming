@@ -61,5 +61,5 @@ class Rectangle:
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        """ bitte mir sagen das ist nicht die ende """
-        print("here comes the void again")
+        """ bitte mir sagen das ist nicht die ende HAHAHAHA """
+        print("Bye rectangle...")
