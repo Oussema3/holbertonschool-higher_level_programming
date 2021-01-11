@@ -6,5 +6,4 @@ one class
 
 class Rectangle:
     """ we love void """
-    
     pass
