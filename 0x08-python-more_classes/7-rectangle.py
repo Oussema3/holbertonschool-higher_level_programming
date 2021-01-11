@@ -57,8 +57,8 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return (void)
         for i in range(self.__height - 1):
-            void += "#" * self.__width + "\n"
-        void += "#" * self.__width
+            void += str(self.print_symbol) * self.__width + "\n"
+        void += str(self.print_symbol) * self.__width
         return (void)
 
     def __repr__(self):
