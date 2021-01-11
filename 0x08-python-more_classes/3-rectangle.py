@@ -52,7 +52,7 @@ class Rectangle:
     def __str__(self):
         void = ""
         if self.__width == 0 or self.__height == 0:
-            return void
+            return (void)
         for i in range(self.__height - 1):
             void += "#" * self.__width + "\n"
         void += "#" * self.__width
