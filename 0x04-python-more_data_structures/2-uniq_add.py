@@ -4,4 +4,4 @@ def uniq_add(my_list=[]):
     x = 0
     for i in round:
         x = x + i
-    return n
+    return x
