@@ -1,19 +1,21 @@
 #!/usr/bin/python3
-""" class Student """
+""" Module implementing class Student """
 
 
 class Student():
     """ Rpresenting a student with:
-        first name , last name and age
+        first_name,last_name and age 
     """
+
     def __init__(self, first_name, last_name, age):
-        """ class init """
-        self.age = age
+        """ class init  """
         self.first_name = first_name
+        self.age = age
         self.last_name = last_name
 
     def to_json(self, attrs=None):
-        """ class init """
+        """ Returning dictionary representation
+        """
         if attrs and type(attrs) is list:
             round = {}
             for attr in self.__dict__:
@@ -23,6 +25,6 @@ class Student():
 
         return dict(self.__dict__)
 
-def reload_from_json(self, json):
-        """ Replacesattributes """
+    def reload_from_json(self, json):
+        """ Replaces all attributes """
         self.__dict__.update(json)
