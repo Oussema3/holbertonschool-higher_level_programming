@@ -14,7 +14,7 @@ class Student():
 
     def to_json(self, attrs=None):
         """ class init """
-        if type(attrs) is list or type(attrs) is tuple:
+        if attrs and type(attrs) is list:
             round = {}
             for attr in self.__dict__:
                 if attr in attrs:
