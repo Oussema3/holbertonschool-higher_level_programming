@@ -1,17 +1,27 @@
 #!/usr/bin/python3
+"""
+    documentation of the module square
+         1 - Square
+"""
+
+
 class Square:
-    """ class square defines a square by size:
-    size must be an integer that belongs to R"""
+    """
+    documentation of the class Square
+        *methodes:
+            __init__
+            area
+        *attributes:
+            size: private
+    """
     def __init__(self, size=0):
-        """ initialize square objects,
-        initialize  size to 0
-        checks if size has the correct type and value """
+        """documentation of the method __init__: constructor"""
         if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
+        self.__size = size
 
     def area(self):
-        return self.__size ** 2
+        """documentation of the method area: return the area of square"""
+        return self.__size**2
