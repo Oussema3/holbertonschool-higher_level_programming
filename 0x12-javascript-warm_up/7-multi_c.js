@@ -1,9 +1,9 @@
 #!/usr/bin/node
-let Script = "C is fun";
-let i = Number(process.argv[2]);
+const Script = 'C is fun';
+const i = Number(process.argv[2]);
 
 if (isNaN(i))  {
-    console.log("Missing number of occurrences");
+    console.log('Missing number of occurrences');
 }
 else {
     let v=0;
