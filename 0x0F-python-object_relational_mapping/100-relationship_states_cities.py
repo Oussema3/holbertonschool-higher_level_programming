@@ -2,13 +2,16 @@
 """
 creates the  with the San 
 """
-import sys
-from relationship_state import Base, State, City
-from sqlalchemy import (create_engine)
+import sqlalchemy
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from relationship_state import Base, State
+from sys import argv
+from relationship_city import City
 
 
-if __name__ == "__main__":
+def main(argv):
+    """ main func"""
     eng = create_engine("mysql+mysqldb://{}:{}@localhost/{}".format(argv[1],
                                                                     argv[2],
                                                                     argv[3]))
