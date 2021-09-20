@@ -9,9 +9,7 @@ from relationship_state import Base, State
 from sys import argv
 from relationship_city import City
 
-
-def main(argv):
-    """ main func"""
+if __name__ == "__main__":
     eng = create_engine("mysql+mysqldb://{}:{}@localhost/{}".format(argv[1],
                                                                     argv[2],
                                                                     argv[3]))
